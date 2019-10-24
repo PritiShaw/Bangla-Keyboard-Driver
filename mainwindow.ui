@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>বাংলা নোটপ্যাড</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="text">
+      <property name="font">
+       <font>
+        <family>Sanskrit Text</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>582</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuMade_by_A3_L12">
+    <property name="title">
+     <string>Credits</string>
+    </property>
+    <addaction name="actionMade_By_Group_12"/>
+    <addaction name="action001710501068_Dibyajyoti_Dhar"/>
+    <addaction name="action001710501070_Akash_Ghosh"/>
+    <addaction name="action001710501073_Rohit_Rajat_Chattopadhyay"/>
+    <addaction name="action001710501076_Priti_Shaw"/>
+    <addaction name="action301810501009_Soumika_Mukherjee"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionShow_Layout"/>
+   </widget>
+   <addaction name="menuHelp"/>
+   <addaction name="menuMade_by_A3_L12"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionMade_By_Group_12">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Made By Group 12</string>
+   </property>
+  </action>
+  <action name="action001710501068_Dibyajyoti_Dhar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>001710501068 Dibyajyoti Dhar</string>
+   </property>
+  </action>
+  <action name="action001710501070_Akash_Ghosh">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>001710501070 Akash Ghosh</string>
+   </property>
+  </action>
+  <action name="action001710501073_Rohit_Rajat_Chattopadhyay">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>001710501073 Rohit Rajat Chattopadhyay</string>
+   </property>
+  </action>
+  <action name="action001710501076_Priti_Shaw">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>001710501076 Priti Shaw</string>
+   </property>
+  </action>
+  <action name="action301810501009_Soumika_Mukherjee">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>301810501009 Soumika Mukherjee</string>
+   </property>
+  </action>
+  <action name="actionShow_Layout">
+   <property name="text">
+    <string>Show Layout</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
