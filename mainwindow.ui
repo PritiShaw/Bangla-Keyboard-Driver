@@ -70,31 +70,19 @@
     <addaction name="action001710501073_Rohit_Rajat_Chattopadhyay"/>
     <addaction name="action001710501076_Priti_Shaw"/>
     <addaction name="action301810501009_Soumika_Mukherjee"/>
+    <addaction name="separator"/>
+    <addaction name="actionSystems_Lab_JU_BCSE_III"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
     <addaction name="actionShow_Layout"/>
+    <addaction name="actionShow_Documentation"/>
    </widget>
    <addaction name="menuHelp"/>
    <addaction name="menuMade_by_A3_L12"/>
   </widget>
-  <action name="actionNew">
-   <property name="text">
-    <string>New</string>
-   </property>
-  </action>
-  <action name="actionSave">
-   <property name="text">
-    <string>Save</string>
-   </property>
-  </action>
-  <action name="actionOpen">
-   <property name="text">
-    <string>Open</string>
-   </property>
-  </action>
   <action name="actionMade_By_Group_12">
    <property name="enabled">
     <bool>false</bool>
@@ -146,6 +134,16 @@
   <action name="actionShow_Layout">
    <property name="text">
     <string>Show Layout</string>
+   </property>
+  </action>
+  <action name="actionShow_Documentation">
+   <property name="text">
+    <string>Show Manual</string>
+   </property>
+  </action>
+  <action name="actionSystems_Lab_JU_BCSE_III">
+   <property name="text">
+    <string>Developed at Systems Lab, JU BCSE-III</string>
    </property>
   </action>
  </widget>
