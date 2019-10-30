@@ -4,11 +4,15 @@ import codecs
 shift = False
 shiftMap = {}
 unShiftMap = {}
-def remap_keyboard(src, bangla):    
+
+
+def remap_keyboard(src):
     def handler(event):
+        global shift
         if (event.event_type == keyboard.KEY_DOWN):
             if(shift and (src in shiftMap)):
                 keyboard.write(shiftMap[src])
+                shift = False
             elif(src in unShiftMap):
                 keyboard.write(unShiftMap[src])
             else:
@@ -17,23 +21,32 @@ def remap_keyboard(src, bangla):
             keyboard.release(src)
     keyboard.hook_key(src, handler, suppress=True)
 
-def shiftHandler(e):
-    global shift
-    shift = not shift
 
-keyboard.on_press_key('shift',shiftHandler)
+def shiftPressHandler(e):
+    global shift
+    shift = True
+
+
+def shiftReleaseHandler(e):
+    global shift
+    shift = False
+
+
+keyboard.on_press_key('shift', shiftPressHandler)
+keyboard.on_release_key('shift', shiftReleaseHandler)
 
 f = codecs.open("shift.csv", mode="r", encoding="utf-8")
 for x in f:
     x = x.strip().split("\n")[0].split(",")
-    remap_keyboard(x[0].lower(),x[1])
-    shiftMap[x[0]] = x[1]    
+    remap_keyboard(x[0].lower())
+    shiftMap[x[0].lower()] = x[1]
 
 f = codecs.open("unshift.csv", mode="r", encoding="utf-8")
 for x in f:
     x = x.strip().split("\n")[0].split(",")
-    remap_keyboard(x[0],x[1])
-    unShiftMap[x[0]] = x[1]
-shiftMap[","]="ষ"
-remap_keyboard(",","ষ")
+    remap_keyboard(x[0].lower())
+    unShiftMap[x[0].lower()] = x[1]
+
+shiftMap[","] = '\u0998'
+remap_keyboard(",")
 keyboard.wait('esc')
