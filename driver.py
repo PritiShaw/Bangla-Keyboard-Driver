@@ -12,7 +12,7 @@ def remap_keyboard(src):
         if (event.event_type == keyboard.KEY_DOWN):
             if(shift and (src in shiftMap)):
                 keyboard.write(shiftMap[src])
-                shift = False
+                shift = True
             elif(src in unShiftMap):
                 keyboard.write(unShiftMap[src])
             else:
