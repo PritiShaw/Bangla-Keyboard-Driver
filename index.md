@@ -18,6 +18,7 @@ The Inscript keyboard layout was designed to make it easy to type in all Indian 
 For example, typing  `F` will produce the vowel  ই. If this vowel is combined with a consonant, though, such as  কি, the vowel part  ি  is typed with  `f`  after the consonant has been typed. If you press Backspace once, only the vowel part will be erased, and you can type a different vowel.
 
 ### Example
+
 |In Bangla |English Phonic|Type the following keys|
 |--|--|--|
 |বাংলা লিপি|Bangla Lipi|`b` `e` `x` `n` `e` `space` `n` `f` `h` `f`|
