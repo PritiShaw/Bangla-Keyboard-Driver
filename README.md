@@ -1,12 +1,13 @@
-Bangla Keyboard Driver
----
+# Bangla Keyboard Driver
 
-**NOTE**: Windows only
+JU BCSEIII Systems Lab Assignment 5
 
-To run
-```
-pip install keyboard
-python driver.py
-```
+[Documentation](https://pritishaw.github.io/Bangla-Keyboard-Driver/)
 
-To exit press `ESC`
+### Made By
+* Dibyajyoti Dhar
+* Akash Ghosh
+* Rohit Rajat Chattopadhyay
+* Priti Shaw
+* Soumika Mukherjee
+
