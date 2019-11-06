@@ -15,6 +15,8 @@ The keyboard driver is based on **InScript** (short for Indic Script) as standar
 
 The Inscript keyboard layout was designed to make it easy to type in all Indian scripts. It uses the same layout for all languages, and has been standardised by the Government of India. There are separate keys for consonants and vowels. Most Bengali characters have both consonant and vowel parts, and each part should be typed separately. The consonant part is always typed before the vowel, no matter where the vowel part is written..
 
+To stop the driver, press `ESC` key.
+
 For example, typing  `F` will produce the vowel  ই. If this vowel is combined with a consonant, though, such as  কি, the vowel part  ি  is typed with  `f`  after the consonant has been typed. If you press Backspace once, only the vowel part will be erased, and you can type a different vowel.
 
 ### Example
